@@ -1,0 +1,27 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    bson (1.8.6)
+    bson_ext (1.8.5)
+      bson (~> 1.8.5)
+    haml (3.1.7)
+    i18n (0.6.9)
+    json (1.7.3)
+    mongo (1.8.5)
+      bson (~> 1.8.5)
+    multi_json (1.8.4)
+    tilt (1.4.1)
+    webmachine (1.1.0)
+      i18n (>= 0.4.0)
+      multi_json
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bson_ext (= 1.8.5)
+  haml (= 3.1.7)
+  json (= 1.7.3)
+  mongo (= 1.8.5)
+  tilt (= 1.4.1)
+  webmachine (= 1.1.0)
