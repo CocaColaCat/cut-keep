@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<chapters>
+	<chapter>
+		<name>layout</name>
+<reference>www.one.com</reference>
+<reference>www.two.com</reference>
+	<chapter>
+<chapter>
+<name>color</name>
+<reference>www.three.com</reference>
+<reference>www.four.com</reference>
+</chapter>
+  </chapters>
