@@ -10,6 +10,9 @@ class ChapterResource < Webmachine::Resource
     text = File.read(path)
     xml = Nokogiri::XML(text)
     references = get_references(xml, request.path_info[:topic])
+    params = {ref: references }
+    p params
+    TemplateRenderer.render "chapters.haml", Object.new, params
   end
 
 end

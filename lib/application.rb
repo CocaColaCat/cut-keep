@@ -5,6 +5,7 @@ require 'haml'
 require 'nokogiri'
 require_relative './util'
 require_relative './resources/chapter_resource'
+require_relative './template_renderer'
 
 TEMPLATES_DIR = File.join(File.expand_path('../../', __FILE__), 'templates')
 
