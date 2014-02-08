@@ -1,0 +1,16 @@
+!!! 5
+%html
+  %head
+    %link{:rel => "stylesheet", :type => "text/css", :href => "./css/reset.css"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "./css/960_12_col.css"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "./css/header.css"}
+    %script{:rel => "javascript", :type => "text/javascript", :src => "/javascript/cutkeep.js"}
+  %body
+    .header
+      .container_12
+        .grid_5.site_name CUT&KEEP 
+        .grid_7
+          %ul.header_nav
+            - topics.each do |topic|
+              %li
+                %a{:class => "", :href => "/chapter/#{topic}", :ref => "#{topic}"}= topic

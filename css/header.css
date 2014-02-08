@@ -1,0 +1,46 @@
+
+.header{
+  height: 130px;
+  background-color: #A7A9AC;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.site_name{
+  margin-top: 70px;
+  line-height: 60px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.header_nav {
+  margin-top: 65px;
+  height: 65px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.header_nav li{
+  float: left;
+}
+
+.header_nav a{
+  display: block;
+  color: white;
+  text-decoration:none;
+  background-color: #414042;
+  height: 35px;
+  margin-top:5px;
+  margin-left: 2px;
+  padding-right: 13px;
+  padding-left: 13px;
+  padding-top: 25px;
+}
+
+.header_nav a:hover{
+  border-top: 3px solid #EE2A7B;
+  height:37px;
+  padding-top:25px;
+  margin-top: 0px;
+  background-color:white;
+  color: #414042;
+}
