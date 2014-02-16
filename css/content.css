@@ -22,9 +22,12 @@
 
 .reference{
   height: 250px;
-  margin-top:30px;
+  margin-top:50px;
   float: left;
   position: relative;
+}
+
+.caption{
   border: 1px solid #F1F2F2;
 }
 

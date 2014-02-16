@@ -1,2 +1,8 @@
-- ref.each do |r|
-  %p= r
+.wrapper
+  .container_12.content
+    .grid_12.abstract Any
+    - index = 0
+    - links.each do |link|
+      .grid_4.reference 
+        %img{:class => "caption", :src => "http://api.webthumbnail.org?width=290&height=250&screen=1024&url=#{link}", "data-caption" => "#{cap[index]}"}
+        - index = (index + 1)

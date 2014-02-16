@@ -7,12 +7,18 @@ Feature: get any chapter's references
     """
     <chapters>
     	<chapter>
-    		<name>layout</name>
-		<reference>www.one.com</reference>
-		<reference>www.two.com</reference>
+    		<topic>layout</topic>
+		<reference>
+			<link>www.one.com</link>
+			<caption>any text</caption>
+		</reference>
+		<reference>
+			<link>www.two.com</link>
+			<caption>any other text</caption>
+		</reference>
     	<chapter>
 	<chapter>
-		<name>color</name>
+		<topic>color</topic>
 		<reference>www.three.com</reference>
 		<reference>www.four.com</reference>
 	</chapter>
@@ -20,3 +26,4 @@ Feature: get any chapter's references
       """
       When a client requests all references of chapter "layout"
       Then he should see this references "www.one.com"
+      And he should see this caption "any text"

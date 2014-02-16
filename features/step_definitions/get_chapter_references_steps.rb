@@ -10,6 +10,9 @@ end
 
 Then(/^he should see this references "(.*?)"$/) do |arg1|
   last_response.body.should include(arg1)
-  File.delete(@output_path)
 end
 
+Then(/^he should see this caption "(.*?)"$/) do |arg1|
+  last_response.body.should include(arg1)
+  File.delete(@output_path)
+end
