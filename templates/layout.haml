@@ -1,14 +1,14 @@
 !!! 5
 %html
   %head
-    %link{:rel => "stylesheet", :type => "text/css", :href => "./css/reset.css"}
-    %link{:rel => "stylesheet", :type => "text/css", :href => "./css/960_12_col.css"}
-    %link{:rel => "stylesheet", :type => "text/css", :href => "./css/header.css"}
-    %link{:rel => "stylesheet", :type => "text/css", :href => "./css/content.css"}
-    %link{:rel => "stylesheet", :type => "text/css", :href => "./css/captionjs.css"}
-    %script{:rel => "javascript", :type => "text/javascript", :src => "./js/jquery-1.11.0.js"}
-    %script{:rel => "javascript", :type => "text/javascript", :src => "./js/jquery.caption.js"}
-    %script{:rel => "javascript", :type => "text/javascript", :src => "./js/cutkeep.js"}    
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/css/reset.css"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/css/960_12_col.css"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/css/header.css"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/css/content.css"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/css/captionjs.css"}
+    %script{:rel => "javascript", :type => "text/javascript", :src => "/js/jquery-1.11.0.js"}
+    %script{:rel => "javascript", :type => "text/javascript", :src => "/js/jquery.caption.js"}
+    %script{:rel => "javascript", :type => "text/javascript", :src => "/js/cutkeep.js"}    
   %body
     .header
       .container_12
@@ -16,13 +16,13 @@
         .grid_7
           %ul.header_nav
             %li
-              %a{:class => "", :href => "/chapter/layout", :ref => "layout"} layout
+              %a{:class => "home", :href => "/chapter/layout", :ref => "layout"} layout
             %li 
-              %a{:class => "", :href => "/chapter/color", :ref =>"color"} color
+              %a{:class => "nav", :href => "/chapter/color", :ref =>"color"} color
             %li 
-              %a{:class => "", :href => "/chapter/texture", :ref => "texture"} texture
+              %a{:class => "nav", :href => "/chapter/texture", :ref => "texture"} texture
             %li
-              %a{:class => "", :href => "/chapter/typography", :ref => "typography"} typography
+              %a{:class => "nav", :href => "/chapter/typography", :ref => "typography"} typography
             %li
-              %a{:class => "", :href => "/chapter/imagery", :ref => "imagery"} imagery
+              %a{:class => "nav", :href => "/chapter/imagery", :ref => "imagery"} imagery
       = yield

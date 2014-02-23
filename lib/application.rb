@@ -17,6 +17,7 @@ APP = Webmachine::Application.new do |app|
 
   app.routes do
     add ['chapter', :topic], ChapterResource
+    add ['chapter'], ChapterResource
   end
 
 end

@@ -6,7 +6,7 @@ class ChapterResource < Webmachine::Resource
   end
 
   def to_html
-    path = File.join(File.expand_path('../../../', __FILE__), 'features/step_definitions/chapters.xml') 
+    path = File.join(File.expand_path('../../../', __FILE__), 'data/chapters.xml') 
     text = File.read(path)
     xml = Nokogiri::XML(text)
     links = get_links(xml, request.path_info[:topic])
